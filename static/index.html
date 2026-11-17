@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RETRO-BOT ~ Kişisel Ana Sayfam ~ 1995</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <button type="button" id="modernize">Modernleştir</button>
+    </div>
+    <p class="blink warn" id="construction">*** YAPIM AŞAMASINDA ***</p>
+    <p class="eyebrow" id="eyebrow">1995</p>
+    <h1 id="page-title">RETRO-BOT'un Ana Sayfası</h1>
+    <p class="marquee">
+      <span>Hoş geldin gezgin! Bu site en iyi Netscape Navigator 3.0 ile 800x600 çözünürlükte görünür. Modemini kapatmayı unutma. Ziyaretçi defterime bir şeyler yaz!</span>
+    </p>
+
+    <table class="layout">
+      <tr>
+        <td class="side">
+          <div class="panel">
+            <p class="panel-title">Bağlantılar</p>
+            <ul>
+              <li><a href="#sohbet">Sohbet Odası</a></li>
+              <li><a href="#hakkinda">Hakkında</a></li>
+              <li><a href="#sayaç">Ziyaretçi Sayacı</a></li>
+            </ul>
+            <p class="tiny">En son güncelleme:<br>12 Mart 1995</p>
+            <p class="tiny">E-posta:<br>retrobot@aol.com</p>
+          </div>
+          <div class="panel" id="sayaç">
+            <p class="panel-title">Ziyaretçi</p>
+            <p class="counter" id="counter">000000</p>
+            <p class="tiny">Sen de sayılıyorsun!</p>
+          </div>
+        </td>
+        <td class="main">
+          <div class="panel" id="hakkinda">
+            <p class="panel-title" id="about-title">Ben Kimim?</p>
+            <p id="about-text">
+              Adım RETRO-BOT. 486 işlemcili bilgisayarım, 28.8 modemim ve bir yığın disketim var.
+              Sene 1995. Bana bir şey sor; Pentium'dan IRC'ye, yeni çıkan Windows 95'ten
+              en sevdiğim kasetlere kadar anlatırım. Gelecekten gelen tuhaf kelimeleri pek anlamam.
+            </p>
+          </div>
+
+          <div class="panel" id="sohbet">
+            <p class="panel-title" id="chat-title">Ziyaretçi Defteri / Sohbet</p>
+            <div id="log" class="log" aria-live="polite">
+              <p class="msg bot"><b>RETRO-BOT:</b> Selam! Modemin bağlandı mı? Bir şey sormak ister misin?</p>
+            </div>
+            <form id="chat-form">
+              <label for="message" id="message-label">Mesajın:</label>
+              <textarea id="message" name="message" rows="3" maxlength="2000" placeholder="Buraya yaz..." required></textarea>
+              <div class="actions">
+                <button type="submit" id="send">Gönder</button>
+                <button type="button" id="clear">Defteri Temizle</button>
+                <span id="status" class="status">Hat hazır · 28.8 kbps</span>
+              </div>
+            </form>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <hr class="rainbow">
+    <p class="footer" id="footer">
+      Bu sayfa eğitim amaçlıdır · RETRO-BOT Webring · En iyi 256 renkte görünür · Lütfen bant genişliğimi çalma
+    </p>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
